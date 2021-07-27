@@ -1,0 +1,128 @@
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+
+/* font size 15px */
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --darkcyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: white;
+    font-size: 14px
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cards .card {
+    padding: 30px;
+}
+
+.card .bot {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid var(--background-headings-buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 10px 0px;
+}
+
+
+.card h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--background-headings-buttons);
+    font-size: 38px;
+    padding: 0px 0px;
+    margin: 19px 0px;
+}
+
+.card p{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    margin-right: 10px;
+
+}
+
+
+/* sedan BG and button */
+
+.sedans {
+    background-color: var(--orange);
+}
+
+.sedan-bot {
+    color: var(--orange);
+}
+
+.sedan-bot:hover {
+    background-color: var(--orange);
+    border: solid 2px var(--background-headings-buttons);
+    cursor: pointer;
+    color: var(--background-headings-buttons);
+    box-sizing: border-box;
+}
+
+/* SUV BG and button */
+
+.suvs {
+    background-color: var(--cyan);
+}
+
+.suv-bot {
+    color: var(--cyan);
+}
+
+.suv-bot:hover {
+    background-color: var(--cyan);
+    border: solid 2px var(--background-headings-buttons);
+    cursor: pointer;
+    color: var(--background-headings-buttons);
+    box-sizing: border-box;
+}
+
+/* luxury BG and button */
+
+.luxury {
+    background-color: var(--darkcyan);
+}
+
+.luxury-bot {
+    color: var(--darkcyan);
+}
+
+.luxury-bot:hover {
+    background-color: var(--darkcyan);
+    border: solid 2px var(--background-headings-buttons);
+    cursor: pointer;
+    color: var(--background-headings-buttons);
+}
+
+@media (min-width: 1200px){
+
+    .cards{
+        flex-direction: row;
+        max-width: 800px;   
+    }
+
+    .card p {
+        margin-right: 0;
+    }
+}
