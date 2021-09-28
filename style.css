@@ -112,12 +112,13 @@ body {
     background-color: var(--darkcyan);
     border: solid 2px var(--background-headings-buttons);
     cursor: pointer;
-    color: white;
+    color: blue;
 }
 
 @media (min-width: 1200px){
 
     .cards{
+
         flex-direction: row;
         max-width: 800px;   
     }
