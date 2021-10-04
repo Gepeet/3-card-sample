@@ -119,7 +119,7 @@ body {
 
     .cards{
 
-        flex-direction: row;
+        flex-direction: column;
         max-width: 800px;   
     }
 
