@@ -112,15 +112,23 @@ body {
     background-color: var(--darkcyan);
     border: solid 2px var(--background-headings-buttons);
     cursor: pointer;
-    color: blue;
+    color: var(--background-headings-buttons);
 }
 
-@media (min-width: 1200px){
 
+@media screen and (min-width: 900px) {
+
+    body{
+        /* width: 10; */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .cards{
 
-        flex-direction: column;
-        max-width: 800px;   
+        flex-direction: row;
+        max-width: 900px;   
     }
 
     .card p {
